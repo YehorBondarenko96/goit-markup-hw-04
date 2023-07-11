@@ -137,6 +137,12 @@ header .list{
     color: var(--text-header-hover);
 }
 
+.current::after{
+    content: "";
+    color: #404BBF;
+    background-image: url(../images/icons.svg#icon-hover);
+}
+
 .list-menu-header:hover,
 .list-menu-header:focus {
     color: var(--text-header-hover);
@@ -174,6 +180,9 @@ header .list{
     background-color: var(--title-background);
     text-align: center;
     padding: 188px 0;
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7),
+                rgba(46, 47, 66, 0.7)), url(../images/hero-bg.jpg);
+    background-position: 50% 50%;            
 }
 
 .title-first-section{
@@ -215,6 +224,22 @@ header .list{
 
 .second-section{
     padding: 120px 0;
+}
+
+.background-icons-ll-section{
+    position: relative;
+    width: 264px;
+    height: 112px;
+    border-radius: 4px;
+    background-color:  #F4F4FD;
+    margin-bottom: 8px;
+}
+
+.icons-ll-section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .visually-hidden {
@@ -299,6 +324,30 @@ header .list{
     justify-content: center;
 }
 
+.list-icons-llll-section{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.background-icons-llll-section{
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #4D5AE5;
+}
+
+.icons-llll-section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 12px;
+}
+
 .list-fourth-section{
     background-color: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
@@ -318,6 +367,27 @@ header .list{
     letter-spacing: 0.02em;
     text-align: center;    
     margin-bottom: 8px;
+}
+
+.list-icons-fifth-section{
+    display: flex;
+}
+
+.background-icons-fifth-section{
+    position: relative;
+    width: ((100% - 24px*5)/6);
+    height: 88px;
+    border-radius: 4px;
+    border: 1px solid #8E8F99;
+}
+
+.icons-fifth-section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 104px;
+    height: 56px;
 }
 
 .fourth-section-p {
