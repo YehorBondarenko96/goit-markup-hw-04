@@ -446,6 +446,10 @@ header .list{
     max-width: 264px;
 }
 
+.second-section-footer{
+
+}
+
 .h-llll-footer{
     font-size: 16px;
     font-style: normal;
@@ -454,6 +458,22 @@ header .list{
     letter-spacing: 0.32px;
     color: #FFF;
     padding-bottom: 16px;
+}
+
+.list-icons-footer-section{
+    display: flex;
+    gap: 16px;
+    justify-content: center;
+    margin-top: 8px;
+}
+
+.icons-footer-section{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 24px;
+    height: 24px;
 }
 
 
