@@ -448,9 +448,6 @@ header .list{
     color: #8e8f99;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
         color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transition-property: color, background-color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .link-icons-fifth-section:hover,
@@ -565,9 +562,8 @@ header .list{
 .modal-window{
     position: absolute;
     top: 50%;
-    left: 0%;
-    transform: translate(0%, -50%) scale(1);
-    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1);
     background: #fcfcfc;
     width: 408px;
     min-height: 584px;
@@ -592,21 +588,13 @@ header .list{
     align-items: center;
     justify-content: center;
     padding: 0;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close:hover,
 .modal-close:focus{
     background-color: #404bbf;
     border: none;
-}
-
-.close{
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.close:hover,
-.close:focus{
     fill:#ffffff;
 }
 
@@ -635,9 +623,10 @@ header .list{
     border-radius: 4px;
     border: 1px solid #E7E9FC;
     padding: 12px 24px;
-    transition-property: color, box-shadow, background-color, border;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .first-button:hover,
