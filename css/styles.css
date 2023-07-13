@@ -346,6 +346,11 @@ header .list{
     justify-content: center;
 }
 
+.img-fourth-section{
+    max-width: 264px;
+    width:100%;
+}
+
 .list-icons-llll-section{
     display: flex;
     gap: 24px;
